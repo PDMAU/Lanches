@@ -1,17 +1,13 @@
 package com.lanches.apirest.models;
 
-public class IngredienteLanche {
-	private Ingrediente ingrediente;
+public class IngredienteLanche extends Ingrediente{
+	
 	private int quantidade;
 	
-	public Ingrediente getIngrediente() {
-		return ingrediente;
+	public IngredienteLanche(String nome, float preco) {
+		super(nome, preco);
 	}
-	
-	public void setIngrediente(Ingrediente ingrediente) {
-		this.ingrediente = ingrediente;
-	}
-	
+		
 	public int getQuantidade() {
 		return quantidade;
 	}

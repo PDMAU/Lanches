@@ -2,6 +2,7 @@ package com.lanches.apirest.models;
 
 public class Ingrediente {
 
+	private int id;
 	private String nome;
 	private float preco;
 	
@@ -24,6 +25,14 @@ public class Ingrediente {
 	
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 }
