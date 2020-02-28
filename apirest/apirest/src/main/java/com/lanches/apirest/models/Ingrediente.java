@@ -6,9 +6,10 @@ public class Ingrediente {
 	private String nome;
 	private float preco;
 	
-	public Ingrediente(String nome, float preco) {
+	public Ingrediente(int id, String nome, float preco) {
 		this.setNome(nome);
 		this.setPreco(preco);
+		this.setId(id);
 	}
 	
 	public float getPreco() {
@@ -31,7 +32,7 @@ public class Ingrediente {
 		return id;
 	}
 
-	public void setId(int id) {
+	private void setId(int id) {
 		this.id = id;
 	}
 	

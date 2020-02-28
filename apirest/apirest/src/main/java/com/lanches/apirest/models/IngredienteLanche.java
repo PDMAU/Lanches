@@ -4,8 +4,9 @@ public class IngredienteLanche extends Ingrediente{
 	
 	private int quantidade;
 	
-	public IngredienteLanche(String nome, float preco) {
-		super(nome, preco);
+	public IngredienteLanche(int id, String nome, float preco, int quantidade) {
+		super(id, nome, preco);
+		this.quantidade = quantidade;
 	}
 		
 	public int getQuantidade() {
